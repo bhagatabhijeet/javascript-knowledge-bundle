@@ -49,3 +49,4 @@ Understanding function shape helps you choose the right model for callbacks, ite
 - [Variables and declarations](./variables.md)
 - [Objects and object literal patterns](./objects.md)
 - [Async JavaScript](./async.md)
+- [Types of functions](./function-types.md)

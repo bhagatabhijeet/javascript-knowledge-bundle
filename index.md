@@ -22,6 +22,11 @@ This bundle is intended to exercise the OKF import pipeline in obviewus and vali
 - `fundamentals/objects`
 - `fundamentals/async`
 - `fundamentals/modules`
+- `fundamentals/node`
+- `fundamentals/primitive-types`
+- `fundamentals/dynamic-typing`
+- `fundamentals/arrays`
+- `fundamentals/function-types`
 
 ## Notes
 

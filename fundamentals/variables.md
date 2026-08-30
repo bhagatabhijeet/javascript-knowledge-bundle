@@ -49,3 +49,5 @@ count += 1
 - [JavaScript introduction](./introduction.md)
 - [Function declarations and expressions](./functions.md)
 - [Objects and object literal patterns](./objects.md)
+- [Primitive data types](./primitive-types.md)
+- [Dynamic typing and type coercion](./dynamic-typing.md)

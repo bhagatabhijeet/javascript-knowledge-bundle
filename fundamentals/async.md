@@ -46,3 +46,4 @@ Asynchronous patterns help avoid blocking and keep apps responsive.
 - [Function declarations and expressions](./functions.md)
 - [ES modules](./modules.md)
 - [JavaScript introduction](./introduction.md)
+- [Types of functions](./function-types.md)

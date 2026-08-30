@@ -97,6 +97,7 @@ A command-line server is another option. For example, after installing a suitabl
 - [JavaScript introduction](./introduction.md)
 - [ES modules](./modules.md)
 - [Function declarations and expressions](./functions.md)
+- [JavaScript in Node.js](./node.md)
 
 ## Sources
 

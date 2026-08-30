@@ -44,3 +44,5 @@ Objects are central to configuration, data transfer, and module exports.
 - [Variables and declarations](./variables.md)
 - [Function declarations and expressions](./functions.md)
 - [ES modules](./modules.md)
+- [Arrays](./arrays.md)
+- [Primitive data types](./primitive-types.md)
