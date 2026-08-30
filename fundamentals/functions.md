@@ -1,5 +1,5 @@
 ---
-id: javascript/fundamentals/functions
+id: fundamentals/functions
 title: Function declarations and expressions
 type: Concept
 description: Learn the primary ways to define functions and how hoisting and closures change behavior.

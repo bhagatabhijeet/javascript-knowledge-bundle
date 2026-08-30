@@ -15,12 +15,12 @@ This bundle is intended to exercise the OKF import pipeline in obviewus and vali
 
 ## Concept set
 
-- `javascript/fundamentals/introduction`
-- `javascript/fundamentals/variables`
-- `javascript/fundamentals/functions`
-- `javascript/fundamentals/objects`
-- `javascript/fundamentals/async`
-- `javascript/fundamentals/modules`
+- `fundamentals/introduction`
+- `fundamentals/variables`
+- `fundamentals/functions`
+- `fundamentals/objects`
+- `fundamentals/async`
+- `fundamentals/modules`
 
 ## Notes
 

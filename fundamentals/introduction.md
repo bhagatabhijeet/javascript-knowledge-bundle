@@ -1,5 +1,5 @@
 ---
-id: javascript/fundamentals/introduction
+id: fundamentals/introduction
 title: JavaScript introduction
 type: Concept
 description: An introduction to JavaScript, why it matters, and how the browser and runtime execute code.

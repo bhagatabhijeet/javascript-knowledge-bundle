@@ -21,7 +21,7 @@ Do not skip the human-review stage.
 ## Repository Layout
 
 - `index.md` is bundle metadata and the concept inventory.
-- `javascript/fundamentals/` contains concept documents.
+- `fundamentals/` contains the introductory JavaScript concept documents.
 - Future generated artifacts belong under `generated/` or another explicitly approved directory. Do not overwrite source documents silently.
 - Future agent implementation should live outside the bundle content, preferably in a separate `agent/` package or repository root `tools/` directory.
 
@@ -30,7 +30,7 @@ Do not skip the human-review stage.
 Every concept Markdown file must:
 
 - use YAML frontmatter delimited by `---`;
-- have a stable, unique `id` such as `javascript/fundamentals/variables`;
+- have a stable, unique `id` such as `fundamentals/variables`;
 - have a clear `title`, `type`, `description`, `status`, `trust`, `stale`, and `tags`;
 - contain instructional Markdown with examples where useful;
 - link to related concepts with relative `.md` links when a relationship is meaningful;
@@ -112,7 +112,7 @@ The CLI should make each stage explicit:
 ```text
 python -m agent.cli validate --bundle .
 python -m agent.cli research --seed <url> --out .agent/research.jsonl
-python -m agent.cli draft --bundle . --concept javascript/fundamentals/<id>
+python -m agent.cli draft --bundle . --concept fundamentals/<id>
 python -m agent.cli check-links --bundle .
 python -m agent.cli report --bundle . --out .agent/review.md
 python -m agent.cli publish --bundle . --approved-by <name>

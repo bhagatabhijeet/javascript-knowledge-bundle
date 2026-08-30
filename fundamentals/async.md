@@ -1,5 +1,5 @@
 ---
-id: javascript/fundamentals/async
+id: fundamentals/async
 title: Async JavaScript
 type: Concept
 description: Learn the event loop, promises, and async/await for working with asynchronous work.

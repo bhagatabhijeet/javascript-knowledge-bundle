@@ -1,5 +1,5 @@
 ---
-id: javascript/fundamentals/variables
+id: fundamentals/variables
 title: Variables and declarations
 type: Concept
 description: Understand when to use let, const, and var for safe and predictable behavior.

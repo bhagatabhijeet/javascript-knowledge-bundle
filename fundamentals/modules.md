@@ -1,5 +1,5 @@
 ---
-id: javascript/fundamentals/modules
+id: fundamentals/modules
 title: ES modules
 type: Concept
 description: Organize code with imports and exports using the module system.
