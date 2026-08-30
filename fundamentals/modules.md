@@ -4,8 +4,7 @@ title: ES modules
 type: Concept
 description: Organize code with imports and exports using the module system.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - modules

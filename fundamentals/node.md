@@ -3,9 +3,7 @@ id: fundamentals/node
 title: JavaScript in Node.js
 type: Concept
 description: Install Node.js and run JavaScript outside the browser, including modules, globals, and npm basics.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - node.js
@@ -13,6 +11,12 @@ tags:
   - fundamentals
   - tooling
   - setup
+generated: { by: claude/sonnet-5, at: 2026-08-29T00:00:00Z }
+sources:
+  - resource: https://nodejs.org/
+  - resource: https://docs.npmjs.com/
+  - resource: https://github.com/nvm-sh/nvm
+  - resource: https://github.com/coreybutler/nvm-windows
 ---
 
 # JavaScript in Node.js
@@ -142,11 +146,4 @@ Commit `package.json` and a lockfile (`package-lock.json`); do not commit `node_
 - [ES modules](./modules.md)
 - [Async JavaScript](./async.md)
 
-## Sources
-
-- https://nodejs.org/
-- https://docs.npmjs.com/
-- https://github.com/nvm-sh/nvm
-- https://github.com/coreybutler/nvm-windows
-
-This draft was generated from general knowledge of official Node.js and npm documentation and has not been checked against a live source. It should receive human review before its status or trust is promoted.
+This draft was generated from general knowledge of official Node.js and npm documentation and has not been checked against a live source. It should receive human review before its status is promoted or a `verified` entry is added.

@@ -1,16 +1,18 @@
 ---
 id: fundamentals/dynamic-typing
 title: Dynamic typing and type coercion
-type: Concept
+type: js-basics
 description: How JavaScript's dynamic type system assigns types at runtime and coerces values across operations.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - fundamentals
   - types
   - coercion
+generated: { by: claude/sonnet-5, at: 2026-08-29T00:00:00Z }
+sources:
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 ---
 
 # Dynamic typing and type coercion
@@ -72,10 +74,8 @@ Everything else, including `'0'`, `[]`, and `{}`, is truthy.
 - [Primitive data types](./primitive-types.md)
 - [Variables and declarations](./variables.md)
 - [Objects and object literal patterns](./objects.md)
+- [Comparison operators](./comparison-operators.md)
+- [Equality operators](./equality-operators.md)
+- [Logical operators](./logical-operators.md)
 
-## Sources
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-
-This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status or trust is promoted.
+This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status is promoted or a `verified` entry is added.

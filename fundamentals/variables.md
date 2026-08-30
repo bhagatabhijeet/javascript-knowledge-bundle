@@ -1,11 +1,10 @@
 ---
 id: fundamentals/variables
 title: Variables and declarations
-type: Concept
+type: js-basics
 description: Understand when to use let, const, and var for safe and predictable behavior.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - fundamentals
@@ -51,3 +50,4 @@ count += 1
 - [Objects and object literal patterns](./objects.md)
 - [Primitive data types](./primitive-types.md)
 - [Dynamic typing and type coercion](./dynamic-typing.md)
+- [Assignment operators](./assignment-operators.md)

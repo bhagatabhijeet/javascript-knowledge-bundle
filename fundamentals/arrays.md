@@ -1,16 +1,18 @@
 ---
 id: fundamentals/arrays
 title: Arrays
-type: Concept
+type: js-basics
 description: Create, access, and transform ordered collections with JavaScript arrays and their built-in methods.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - fundamentals
   - arrays
   - collections
+generated: { by: claude/sonnet-5, at: 2026-08-29T00:00:00Z }
+sources:
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
 ---
 
 # Arrays
@@ -82,9 +84,4 @@ Array.isArray(numbers) // true
 - [Primitive data types](./primitive-types.md)
 - [Types of functions](./function-types.md)
 
-## Sources
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
-
-This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status or trust is promoted.
+This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status is promoted or a `verified` entry is added.

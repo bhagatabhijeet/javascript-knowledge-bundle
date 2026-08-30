@@ -3,15 +3,18 @@ id: fundamentals/setting-up-the-development-environment
 title: Setting up the Development Environment
 type: Concept
 description: Prepare a practical JavaScript workspace with Node.js, a code editor, a project folder, and a local development server.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - fundamentals
   - setup
   - tooling
   - node.js
+sources:
+  - resource: 'C:\Users\bhaga\Downloads\af06931e-92c4-467b-8aba-e1af0a8ca76f.mp4'
+    title: Local source video
+  - resource: https://nodejs.org/
+  - resource: https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview
 ---
 
 # Setting up the Development Environment
@@ -99,10 +102,4 @@ A command-line server is another option. For example, after installing a suitabl
 - [Function declarations and expressions](./functions.md)
 - [JavaScript in Node.js](./node.md)
 
-## Sources
-
-- Local source video: `C:\Users\bhaga\Downloads\af06931e-92c4-467b-8aba-e1af0a8ca76f.mp4`
-- https://nodejs.org/
-- https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview
-
-This draft was derived from visible content in the supplied video and should receive human review before its status or trust is promoted.
+This draft was derived from visible content in the source video listed in frontmatter and should receive human review before its status is promoted or a `verified` entry is added.

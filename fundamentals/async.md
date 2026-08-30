@@ -4,8 +4,7 @@ title: Async JavaScript
 type: Concept
 description: Learn the event loop, promises, and async/await for working with asynchronous work.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - async

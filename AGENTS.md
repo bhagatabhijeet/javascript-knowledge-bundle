@@ -1,4 +1,4 @@
-# JavaScript Knowledge Bundle Agent Guide
+tions# JavaScript Knowledge Bundle Agent Guide
 
 This repository is an OKF 0.2 knowledge bundle about JavaScript. Agents may research and draft knowledge, but a human must review and approve every generated change before it is committed or published.
 
@@ -27,21 +27,36 @@ Do not skip the human-review stage.
 
 ## Concept Contract
 
+This bundle follows the Open Knowledge Format v0.2 specification
+(https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md).
 Every concept Markdown file must:
 
 - use YAML frontmatter delimited by `---`;
-- have a stable, unique `id` such as `fundamentals/variables`;
-- have a clear `title`, `type`, `description`, `status`, `trust`, `stale`, and `tags`;
+- have a non-empty `type` (the only field OKF requires);
+- have a clear `title`, `description`, and `tags`;
 - contain instructional Markdown with examples where useful;
 - link to related concepts with relative `.md` links when a relationship is meaningful;
-- identify external sources in a `## Sources` section when the content is researched;
+- record external sources as a `sources` frontmatter list (`{ resource, title? }` per entry), not a body citations section;
 - avoid claims that are not supported by the document or its sources.
 
-Recommended values:
+A stable, unique `id` (such as `fundamentals/variables`) is kept in this bundle as a producer-defined
+extension field even though OKF derives a concept's ID from its file path — it protects against an
+obviewus import-path inconsistency where the desktop file picker and the browser directory picker
+disagree on whether a nested file's name includes its subdirectory.
 
-- `status`: `draft`, `review`, or `stable`;
-- `trust`: `unverified`, `machine-assisted`, or `human-reviewed`;
-- generated drafts must use `status: review` and must not claim `human-reviewed`.
+Trust, lifecycle, and provenance follow OKF §5 rather than a bespoke `status`/`trust`/`stale` vocabulary:
+
+- `status`: `draft` (not yet reviewed, possibly incomplete), `stable` (default; ready for consumption), or
+  `deprecated` (kept for links and history). Generated drafts must use `status: draft`.
+- `generated: { by, at }` records who/what produced the current content and when, using the actor
+  convention (`<producer>/<version>` for agents, `human:<id>` for people, `process:<id>` for automation).
+  A generated draft must not also carry a `verified` entry it cannot honestly claim.
+- `verified: [{ by, at }]` (or a single bare `{ by, at }` mapping) records confirmation events. Trust tier
+  is *derived* from this field, never written directly: no `verified` key -> unverified; verified only by
+  non-`human:` actors -> machine-confirmed; verified by any `human:<id>` actor -> human-reviewed. Only add a
+  `verified` entry after an explicit human (or process) confirmation actually happened.
+- `stale_after: <ISO 8601 datetime>` is optional and absolute (a concept is stale once `now >= stale_after`).
+  Omit it rather than guessing a date; there is no boolean `stale` field in OKF v0.2.
 
 ## Agent Workflow
 
@@ -71,13 +86,13 @@ If the CLI does not exist yet, use the equivalent manual checks and report that 
 - frontmatter parses as YAML;
 - concept IDs are unique;
 - every relative Markdown link resolves;
-- `index.md` lists the concept files;
-- generated concepts have `status: review`;
+- the concept's directory `index.md` (and, if new, the bundle-root `index.md`) links to it;
+- generated concepts have `status: draft` and no `verified` entry;
 - no secrets, credentials, or private URLs were added.
 
 ### 5. Human Review
 
-Present a concise report containing changed files, sources, claims introduced, links added, validation results, and unresolved questions. Wait for explicit approval before changing `status` to `stable`, setting `trust: human-reviewed`, committing, or pushing.
+Present a concise report containing changed files, sources, claims introduced, links added, validation results, and unresolved questions. Wait for explicit approval before changing `status` to `stable`, adding a `verified: { by: human:<id>, at: <datetime> }` entry, committing, or pushing.
 
 ### 6. Publish
 

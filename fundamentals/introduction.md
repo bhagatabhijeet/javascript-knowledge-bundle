@@ -4,8 +4,7 @@ title: JavaScript introduction
 type: Concept
 description: An introduction to JavaScript, why it matters, and how the browser and runtime execute code.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - fundamentals

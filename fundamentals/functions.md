@@ -1,11 +1,10 @@
 ---
 id: fundamentals/functions
 title: Function declarations and expressions
-type: Concept
+type: js-basics
 description: Learn the primary ways to define functions and how hoisting and closures change behavior.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - fundamentals

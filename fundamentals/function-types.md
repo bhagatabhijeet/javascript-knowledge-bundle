@@ -1,16 +1,19 @@
 ---
 id: fundamentals/function-types
 title: Types of functions
-type: Concept
+type: js-basics
 description: The different ways to define and categorize functions in JavaScript, from declarations to higher-order and async functions.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - fundamentals
   - functions
   - types
+generated: { by: claude/sonnet-5, at: 2026-08-29T00:00:00Z }
+sources:
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 ---
 
 # Types of functions
@@ -124,10 +127,4 @@ async function fetchData() {
 - [Arrays](./arrays.md)
 - [Objects and object literal patterns](./objects.md)
 
-## Sources
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-
-This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status or trust is promoted.
+This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status is promoted or a `verified` entry is added.

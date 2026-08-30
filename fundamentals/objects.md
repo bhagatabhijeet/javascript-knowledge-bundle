@@ -1,11 +1,10 @@
 ---
 id: fundamentals/objects
 title: Objects and object literal patterns
-type: Concept
+type: js-basics
 description: Understand object literals, property access, and shared state in JavaScript.
 status: stable
-trust: human-reviewed
-stale: false
+verified: { by: human:bhagatabhijeet, at: 2026-08-29T00:00:00Z }
 tags:
   - javascript
   - fundamentals

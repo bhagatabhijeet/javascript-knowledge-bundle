@@ -1,16 +1,18 @@
 ---
 id: fundamentals/primitive-types
 title: Primitive data types
-type: Concept
+type: js-basics
 description: The seven primitive types in JavaScript and how they behave as immutable values compared to objects.
-status: review
-trust: machine-assisted
-stale: false
+status: draft
 tags:
   - javascript
   - fundamentals
   - types
   - primitives
+generated: { by: claude/sonnet-5, at: 2026-08-29T00:00:00Z }
+sources:
+  - resource: https://developer.mozilla.org/en-US/docs/Glossary/Primitive
+  - resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 ---
 
 # Primitive data types
@@ -77,9 +79,4 @@ console.log(obj1.count) // 2, both variables reference the same object
 - [Objects and object literal patterns](./objects.md)
 - [Arrays](./arrays.md)
 
-## Sources
-
-- https://developer.mozilla.org/en-US/docs/Glossary/Primitive
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
-
-This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status or trust is promoted.
+This draft was generated from general knowledge of MDN's JavaScript documentation and has not been checked against a live source. It should receive human review before its status is promoted or a `verified` entry is added.
