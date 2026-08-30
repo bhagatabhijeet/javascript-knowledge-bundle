@@ -16,6 +16,7 @@ This bundle is intended to exercise the OKF import pipeline in obviewus and vali
 ## Concept set
 
 - `fundamentals/introduction`
+- `fundamentals/setting-up-the-development-environment`
 - `fundamentals/variables`
 - `fundamentals/functions`
 - `fundamentals/objects`
