@@ -25,7 +25,7 @@ for (initialExpression; condition; incrementExpression) {
 }
 ```
 
-![Flowchart: initialize once, check the condition, run the body and increment while true, then exit once false](../assets/images/for-loop-flowchart.svg)
+<img src="../assets/images/for-loop-flowchart.svg" width="420" alt="Flowchart: initialize once, check the condition, run the body and increment while true, then exit once false">
 
 *Original diagram created for this bundle.*
 
