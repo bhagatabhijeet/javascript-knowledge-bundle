@@ -32,4 +32,4 @@ There are two ways to learn JavaScript from this bundle:
 
 ## Acknowledgments
 
-This bundle was built with the help of [Claude Code](https://claude.com/claude-code) and Gemini 3.8 Flash — thank you to both for their assistance drafting and organizing this content.
+This bundle was written using [VS Code](https://code.visualstudio.com/) and [Antigravity](https://antigravity.google/), with the help of [Claude Code](https://claude.com/claude-code) and Gemini 3.8 Flash — thank you to both for their assistance drafting and organizing this content.
