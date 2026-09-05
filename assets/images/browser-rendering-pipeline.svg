@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="260" fill="#ffffff"/>
+
+  <rect x="20" y="30" width="110" height="50" rx="6" fill="#f97316"/>
+  <text x="75" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">HTML</text>
+
+  <rect x="20" y="150" width="110" height="50" rx="6" fill="#38bdf8"/>
+  <text x="75" y="180" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">CSS</text>
+
+  <line x1="130" y1="55" x2="210" y2="80" stroke="#64748b" stroke-width="2"/>
+  <polygon points="210,80 200,76 202,88" fill="#64748b"/>
+  <line x1="130" y1="175" x2="210" y2="150" stroke="#64748b" stroke-width="2"/>
+  <polygon points="210,150 200,146 204,158" fill="#64748b"/>
+
+  <rect x="215" y="60" width="120" height="46" rx="6" fill="#fed7aa" stroke="#f97316"/>
+  <text x="275" y="88" text-anchor="middle" font-size="12" fill="#7c2d12">DOM Tree</text>
+
+  <rect x="215" y="135" width="120" height="46" rx="6" fill="#bae6fd" stroke="#38bdf8"/>
+  <text x="275" y="163" text-anchor="middle" font-size="12" fill="#0c4a6e">CSSOM</text>
+
+  <line x1="335" y1="83" x2="410" y2="115" stroke="#64748b" stroke-width="2"/>
+  <line x1="335" y1="158" x2="410" y2="126" stroke="#64748b" stroke-width="2"/>
+  <polygon points="410,120 400,116 402,128" fill="#64748b"/>
+
+  <rect x="415" y="97" width="120" height="46" rx="6" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="475" y="125" text-anchor="middle" font-size="12" fill="#1e293b">Render Tree</text>
+
+  <line x1="535" y1="120" x2="600" y2="120" stroke="#64748b" stroke-width="2"/>
+  <polygon points="600,120 590,115 590,125" fill="#64748b"/>
+
+  <rect x="605" y="97" width="65" height="46" rx="6" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="637" y="125" text-anchor="middle" font-size="12" fill="#1e293b">Layout</text>
+
+  <line x1="670" y1="120" x2="695" y2="120" stroke="#64748b" stroke-width="2"/>
+  <polygon points="695,120 685,115 685,125" fill="#64748b"/>
+
+  <rect x="700" y="97" width="55" height="46" rx="6" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="727" y="125" font-size="11" fill="#1e293b" text-anchor="middle">Paint</text>
+
+  <rect x="215" y="215" width="330" height="40" rx="6" fill="#f7df1e" stroke="#ca8a04"/>
+  <text x="380" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#422006">JavaScript reads and mutates the DOM Tree</text>
+  <line x1="380" y1="215" x2="280" y2="106" stroke="#ca8a04" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="280,106 278,118 288,112" fill="#ca8a04"/>
+</svg>

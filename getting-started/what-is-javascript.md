@@ -17,6 +17,8 @@ tags:
 
 # What is JavaScript
 
+![JavaScript Programming — the language of the web and beyond](../assets/images/javascript-overview.jpg)
+
 JavaScript is one of the most popular and widely used programming languages in the world. It powers the interactive web, back-end servers, mobile applications, and command-line tools.
 
 ## 1. What is JavaScript?
@@ -54,10 +56,7 @@ Every web browser contains a specialized program called a **JavaScript engine** 
 
 In 2009, engineer Ryan Dahl took Google Chrome's open-source **V8** engine and embedded it inside a C++ application, naming it **Node** (Node.js).
 
-```text
-Browser:  [ Web Browser UI / DOM ]  ──>  [ JavaScript Engine (V8) ]
-Node.js:  [ C++ System APIs / Libuv ] ──>  [ JavaScript Engine (V8) ]
-```
+![Browser and Node.js both embed a JavaScript engine but expose different host APIs](../assets/images/runtime-architecture.svg)
 
 Node allows JavaScript to run directly on an operating system outside a browser. This enables developers to use JavaScript for server-side APIs, file operations, and backend services.
 

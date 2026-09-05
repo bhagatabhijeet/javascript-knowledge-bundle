@@ -1,5 +1,7 @@
 # JavaScript Knowledge Bundle
 
+![JavaScript Programming — the language of the web and beyond](assets/images/javascript-overview.jpg)
+
 This repository is a small OKF 0.2-style knowledge bundle for JavaScript learning and testing with obviewus.
 
 ## Bundle intent
@@ -32,4 +34,4 @@ There are two ways to learn JavaScript from this bundle:
 
 ## Acknowledgments
 
-This bundle was written using [VS Code](https://code.visualstudio.com/) and [Antigravity](https://antigravity.google/), with the help of [Claude Code](https://claude.com/claude-code) and Gemini 3.8 Flash — thank you to both for their assistance drafting and organizing this content.
+This bundle was written using 💻 [VS Code](https://code.visualstudio.com/) and 🌌 [Antigravity](https://antigravity.google/), with the help of 🤖 [Claude Code](https://claude.com/claude-code) and Gemini 3.8 Flash — thank you to both for their assistance drafting and organizing this content.

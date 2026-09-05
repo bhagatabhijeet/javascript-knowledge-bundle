@@ -22,6 +22,8 @@ A web browser consists of two main processing engines:
 1. **Rendering engine**: Parses HTML and CSS to construct the Document Object Model (DOM) and the CSS Object Model (CSSOM), combining them to paint pixels on the screen.
 2. **JavaScript engine**: Parses, compiles, and executes JavaScript code (e.g., Google Chrome uses V8, Mozilla Firefox uses SpiderMonkey, Apple Safari uses JavaScriptCore).
 
+![HTML and CSS are parsed into the DOM and CSSOM, combined into a render tree, then laid out and painted; JavaScript reads and mutates the DOM tree](../assets/images/browser-rendering-pipeline.svg)
+
 The browser provides web-specific APIs that JavaScript can access through the global `window` object:
 - **DOM (Document Object Model)**: Inspect and mutate page elements (`document.querySelector`, `element.textContent`).
 - **BOM (Browser Object Model)**: Access browser features outside the document (`window.location`, `window.navigator`, `window.history`).

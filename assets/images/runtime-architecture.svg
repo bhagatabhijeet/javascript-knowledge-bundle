@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="360" fill="#ffffff"/>
+
+  <!-- Language box -->
+  <rect x="230" y="20" width="300" height="56" rx="8" fill="#1e293b"/>
+  <text x="380" y="45" text-anchor="middle" fill="#f7df1e" font-size="16" font-weight="bold">JavaScript (ECMAScript)</text>
+  <text x="380" y="64" text-anchor="middle" fill="#cbd5e1" font-size="11">the language specification</text>
+
+  <!-- Arrows down -->
+  <line x1="330" y1="76" x2="190" y2="120" stroke="#64748b" stroke-width="2"/>
+  <polygon points="190,120 200,114 200,126" fill="#64748b"/>
+  <line x1="430" y1="76" x2="570" y2="120" stroke="#64748b" stroke-width="2"/>
+  <polygon points="570,120 560,114 560,126" fill="#64748b"/>
+
+  <!-- Browser column -->
+  <rect x="40" y="124" width="300" height="200" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="190" y="152" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e3a8a">Browser</text>
+
+  <rect x="65" y="168" width="250" height="50" rx="6" fill="#3b82f6"/>
+  <text x="190" y="188" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">JS Engine</text>
+  <text x="190" y="204" text-anchor="middle" fill="#dbeafe" font-size="10.5">V8 · SpiderMonkey · JavaScriptCore</text>
+
+  <line x1="190" y1="218" x2="190" y2="234" stroke="#64748b" stroke-width="2"/>
+  <polygon points="190,234 184,224 196,224" fill="#64748b"/>
+
+  <rect x="65" y="238" width="250" height="66" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="190" y="258" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Web APIs</text>
+  <text x="190" y="276" text-anchor="middle" font-size="10.5" fill="#334155">DOM · BOM · fetch</text>
+  <text x="190" y="292" text-anchor="middle" font-size="10.5" fill="#334155">setTimeout · localStorage</text>
+
+  <!-- Node column -->
+  <rect x="420" y="124" width="300" height="200" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="570" y="152" text-anchor="middle" font-size="16" font-weight="bold" fill="#14532d">Node.js</text>
+
+  <rect x="445" y="168" width="250" height="50" rx="6" fill="#22c55e"/>
+  <text x="570" y="188" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">JS Engine</text>
+  <text x="570" y="204" text-anchor="middle" fill="#dcfce7" font-size="10.5">V8 (embedded in a C++ app)</text>
+
+  <line x1="570" y1="218" x2="570" y2="234" stroke="#64748b" stroke-width="2"/>
+  <polygon points="570,234 564,224 576,224" fill="#64748b"/>
+
+  <rect x="445" y="238" width="250" height="66" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="570" y="258" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">C++ APIs (via libuv)</text>
+  <text x="570" y="276" text-anchor="middle" font-size="10.5" fill="#334155">fs · net · process</text>
+  <text x="570" y="292" text-anchor="middle" font-size="10.5" fill="#334155">Buffer · child_process</text>
+
+  <text x="380" y="344" text-anchor="middle" font-size="11" fill="#64748b">Same language, two different host environments and API sets.</text>
+</svg>

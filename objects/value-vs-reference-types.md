@@ -15,6 +15,8 @@ tags:
 
 JavaScript types fall into two categories that behave differently when copied or compared.
 
+![Primitives are copied by value into independent memory; objects are copied by reference to the same underlying object](../assets/images/value-vs-reference.svg)
+
 ## Value types (primitives)
 
 `Number`, `String`, `Boolean`, `Symbol`, `BigInt`, `undefined`, and `null` are copied **by value**. Assigning one variable to another copies the value itself:
