@@ -61,6 +61,10 @@ for (let index in colors) {
 > [!TIP]
 > For arrays, prefer the modern `for...of` loop instead of `for...in`, because `for...of` yields the items directly rather than string indices.
 
+![for...in yields keys and needs bracket notation to reach the value; for...of hands you the value directly](../assets/images/for-in-vs-for-of.svg)
+
+*Original diagram created for this bundle.*
+
 ## Related concepts
 
 - [For...of](./for-of.md)

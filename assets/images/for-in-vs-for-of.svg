@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="800" height="360" fill="#ffffff"/>
+
+  <!-- Left panel: for...in -->
+  <rect x="20" y="20" width="370" height="310" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="205" y="50" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">for...in — iterates KEYS</text>
+  <text x="205" y="68" text-anchor="middle" font-size="11" fill="#1e40af">for (let key in person)</text>
+  <text x="205" y="92" text-anchor="middle" font-size="11" fill="#334155">person = { name: 'Alice', age: 30 }</text>
+
+  <rect x="45" y="110" width="320" height="40" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="55" y="126" font-size="11" font-weight="bold" fill="#1e3a8a">① key = 'name'</text>
+  <text x="55" y="142" font-size="10.5" fill="#334155">person[key] → 'Alice'</text>
+
+  <rect x="45" y="160" width="320" height="40" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="55" y="176" font-size="11" font-weight="bold" fill="#1e3a8a">② key = 'age'</text>
+  <text x="55" y="192" font-size="10.5" fill="#334155">person[key] → 30</text>
+
+  <text x="205" y="228" text-anchor="middle" font-size="10" fill="#64748b">...continues for every enumerable property</text>
+  <text x="205" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#1e3a8a">bracket notation needed to reach the value</text>
+
+  <!-- Right panel: for...of -->
+  <rect x="410" y="20" width="370" height="310" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="595" y="50" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">for...of — iterates VALUES</text>
+  <text x="595" y="68" text-anchor="middle" font-size="11" fill="#15803d">for (let color of colors)</text>
+  <text x="595" y="92" text-anchor="middle" font-size="11" fill="#334155">colors = ['red', 'green', 'blue']</text>
+
+  <rect x="435" y="110" width="320" height="34" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="445" y="132" font-size="11" font-weight="bold" fill="#14532d">① color = 'red'</text>
+
+  <rect x="435" y="150" width="320" height="34" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="445" y="172" font-size="11" font-weight="bold" fill="#14532d">② color = 'green'</text>
+
+  <rect x="435" y="190" width="320" height="34" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="445" y="212" font-size="11" font-weight="bold" fill="#14532d">③ color = 'blue'</text>
+
+  <text x="595" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#14532d">value handed to you directly — no lookup needed</text>
+</svg>
