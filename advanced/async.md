@@ -17,6 +17,8 @@ Modern JavaScript programs frequently rely on asynchronous work such as API call
 
 ![The event loop moves completed work from the microtask and callback queues onto the call stack once it is empty](../assets/images/event-loop.svg)
 
+*Original diagram created for this bundle.*
+
 ## Promises
 
 A promise represents the eventual completion or failure of an asynchronous operation.

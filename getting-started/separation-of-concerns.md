@@ -30,7 +30,7 @@ JS    ──>  Behavior & Interactivity
 
 ![Separation of concerns in web design: HTML for structure, CSS for styling, JavaScript for interactivity](../assets/images/separation-of-concerns.jpg)
 
-*CSS (styling) is shown here for completeness as the third pillar of front-end separation of concerns; this document focuses specifically on the HTML/JavaScript split.*
+*Image courtesy: Gemini 3.8 Flash. CSS (styling) is shown here for completeness as the third pillar of front-end separation of concerns; this document focuses specifically on the HTML/JavaScript split.*
 
 ## The bedroom and kitchen metaphor
 

@@ -27,6 +27,8 @@ for (initialExpression; condition; incrementExpression) {
 
 ![Flowchart: initialize once, check the condition, run the body and increment while true, then exit once false](../assets/images/for-loop-flowchart.svg)
 
+*Original diagram created for this bundle.*
+
 - **Initial expression**: Initializes the loop counter variable (e.g. `let i = 0`). Executed once before loop starts.
 - **Condition**: Evaluated before each iteration. If `true`, loop executes; if `false`, loop terminates.
 - **Increment expression**: Updates the counter after each iteration (e.g. `i++`).

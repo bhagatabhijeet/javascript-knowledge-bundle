@@ -24,6 +24,8 @@ A web browser consists of two main processing engines:
 
 ![HTML and CSS are parsed into the DOM and CSSOM, combined into a render tree, then laid out and painted; JavaScript reads and mutates the DOM tree](../assets/images/browser-rendering-pipeline.svg)
 
+*Original diagram created for this bundle.*
+
 The browser provides web-specific APIs that JavaScript can access through the global `window` object:
 - **DOM (Document Object Model)**: Inspect and mutate page elements (`document.querySelector`, `element.textContent`).
 - **BOM (Browser Object Model)**: Access browser features outside the document (`window.location`, `window.navigator`, `window.history`).
