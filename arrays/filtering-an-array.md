@@ -59,4 +59,6 @@ That makes its result safe to keep using with array methods like `.length`, `.ma
 
 - [Finding Elements (References)](./finding-elements-references.md)
 - [Testing the Elements of an Array](./testing-elements.md)
+- [Mapping an Array](./mapping-an-array.md)
+- [Reducing an Array](./reducing-an-array.md)
 - [Iterating Elements](./iterating-elements.md)

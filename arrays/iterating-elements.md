@@ -62,11 +62,13 @@ numbers.filter(n => n % 2 === 0); // [2, 4] — a new array, matching elements o
 numbers.reduce((sum, n) => sum + n, 0); // 10 — a single accumulated value
 ```
 
-Reach for `map`/`filter`/`reduce` when the goal is to produce a new array or value from the original; reach for `for...of`/`forEach` when the goal is a side effect, like logging or updating something outside the array. See [Filtering an Array](./filtering-an-array.md) for a closer look at `filter`.
+Reach for `map`/`filter`/`reduce` when the goal is to produce a new array or value from the original; reach for `for...of`/`forEach` when the goal is a side effect, like logging or updating something outside the array. See [Mapping an Array](./mapping-an-array.md), [Filtering an Array](./filtering-an-array.md), and [Reducing an Array](./reducing-an-array.md) for a closer look at each.
 
 ## Related concepts
 
 - [Removing Elements](./removing-elements.md)
+- [Mapping an Array](./mapping-an-array.md)
 - [Filtering an Array](./filtering-an-array.md)
+- [Reducing an Array](./reducing-an-array.md)
 - [Introduction to Arrays](./introduction-to-arrays.md)
 - [For...of loop](../control-flow/for-of.md)

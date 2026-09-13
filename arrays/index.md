@@ -14,4 +14,6 @@ Store, query, and transform ordered lists and collections in JavaScript.
 10. [Iterating Elements](./iterating-elements.md) - Loop over an array's elements with for...of and forEach, and transform them with map, filter, and reduce.
 11. [Filtering an Array](./filtering-an-array.md) - Build a new array containing only the elements that pass a test, using filter().
 12. [Testing the Elements of an Array](./testing-elements.md) - Ask a yes/no question about an array's contents with every() and some(), instead of manually looping to check.
-13. [Sorting Arrays](./sorting-arrays.md) - Sort an array in place with sort(), reverse it with reverse(), and write a compare function to sort arrays of objects correctly.
+13. [Mapping an Array](./mapping-an-array.md) - Transform every element of an array into a new one with map(), producing a new array of the same length.
+14. [Reducing an Array](./reducing-an-array.md) - Collapse an array down to a single value — a sum, an object, a count — with reduce() and an accumulator.
+15. [Sorting Arrays](./sorting-arrays.md) - Sort an array in place with sort(), reverse it with reverse(), and write a compare function to sort arrays of objects correctly.
