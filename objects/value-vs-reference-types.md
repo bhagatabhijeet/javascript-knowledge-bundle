@@ -68,3 +68,4 @@ console.log(point.value); // 11
 - [Basics](./basics.md)
 - [Dynamic Nature of Objects](./dynamic-nature-of-objects.md)
 - [Cloning an Object](./cloning-an-object.md)
+- [Object Equality](./object-equality.md)

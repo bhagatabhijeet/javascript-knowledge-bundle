@@ -57,4 +57,5 @@ for (const [key, value] of Object.entries(circle)) {
 
 - [Dynamic Nature of Objects](./dynamic-nature-of-objects.md)
 - [Cloning an Object](./cloning-an-object.md)
+- [Object Equality](./object-equality.md)
 - [For...in](../control-flow/for-in.md)

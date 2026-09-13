@@ -10,7 +10,8 @@ Create, configure, and manipulate JavaScript objects, methods, and reference typ
 6. [Functions are Objects](./functions-are-objects.md) - JavaScript functions are first-class objects with their own properties, methods, and constructor.
 7. [Value vs Reference Types](./value-vs-reference-types.md) - Understand how primitives are copied by value while objects and arrays are copied by reference.
 8. [Enumerating Properties of an Object](./enumerating-properties-of-an-object.md) - List an object's keys, values, or entries using for...in, Object.keys, Object.values, and Object.entries.
-9. [Cloning an Object](./cloning-an-object.md) - Copy an object's properties into a new object using Object.assign, the spread operator, or structuredClone.
-10. [Garbage Collection](./garbage-collection.md) - JavaScript automatically reclaims memory used by objects that are no longer reachable.
-11. [Built-in Objects](./builtin-objects/) - The always-available global objects: Math, String, and Date.
-12. [Template Literal](./template-literals.md) - Build strings with embedded expressions and multi-line text using backtick template literals.
+9. [Object Equality](./object-equality.md) - Compare objects by reference with areSame, or by matching key/value pairs with areEqual, since === only ever checks reference identity.
+10. [Cloning an Object](./cloning-an-object.md) - Copy an object's properties into a new object using Object.assign, the spread operator, or structuredClone.
+11. [Garbage Collection](./garbage-collection.md) - JavaScript automatically reclaims memory used by objects that are no longer reachable.
+12. [Built-in Objects](./builtin-objects/) - The always-available global objects: Math, String, and Date.
+13. [Template Literal](./template-literals.md) - Build strings with embedded expressions and multi-line text using backtick template literals.
