@@ -104,3 +104,4 @@ An older workaround using `JSON.parse(JSON.stringify(circle))` also produces a d
 - [Value vs Reference Types](./value-vs-reference-types.md)
 - [Enumerating Properties of an Object](./enumerating-properties-of-an-object.md)
 - [Combining and Slicing Arrays](../arrays/combining-and-slicing-arrays.md)
+- [The Spread Operator](../arrays/spread-operator.md)

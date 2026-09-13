@@ -82,6 +82,7 @@ Because `first[0]` and `combined[0]` reference the *same* object in memory, muta
 
 ## Related concepts
 
+- [The Spread Operator](./spread-operator.md)
 - [Adding Elements](./adding-elements.md)
 - [Emptying an Array](./emptying-an-array.md)
 - [Value vs Reference Types](../objects/value-vs-reference-types.md)
