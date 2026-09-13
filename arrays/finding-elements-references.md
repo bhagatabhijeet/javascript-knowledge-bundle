@@ -76,3 +76,4 @@ logs.findLast(log => log.level === 'error');
 - [Value vs Reference Types](../objects/value-vs-reference-types.md)
 - [Adding Elements](./adding-elements.md)
 - [Arrow Functions](../functions/arrow-functions.md)
+- [Sorting Arrays](./sorting-arrays.md)
