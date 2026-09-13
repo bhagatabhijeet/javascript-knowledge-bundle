@@ -16,7 +16,20 @@ tags:
 
 # Finding Elements (References)
 
-[`indexOf` and `includes`](./finding-elements-primitives.md) compare with `===`, which for objects means *reference* equality — two objects with identical properties are still considered different unless they're literally the same object in memory. So searching an array of objects needs a **test function** instead of a value to compare against.
+## Why `includes()` doesn't work for objects
+
+[`indexOf` and `includes`](./finding-elements-primitives.md) compare with `===`. For primitives that means comparing the actual value, but for objects `===` checks **reference identity** — whether it's literally the same object in memory, not whether its properties look the same:
+
+```js
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' }
+];
+
+users.includes({ id: 1, name: 'Alice' }); // false!
+```
+
+Even though `{ id: 1, name: 'Alice' }` looks identical to the first element, it's a brand-new object literal — a different location in memory — so `===` says they don't match. `includes()` (and `indexOf`) has no way to compare properties for you; it only ever asks "is this the exact same object?" So searching an array of objects by their *contents* needs a **test function** instead of a value to compare against — which is what `find` and `findIndex` are for.
 
 ## `find()`
 
