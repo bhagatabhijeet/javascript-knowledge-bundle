@@ -11,6 +11,7 @@ Control the order of execution in your JavaScript programs using conditional sta
 7. [For...in](./for-in.md) - Iterate over the enumerable string property keys of an object or indices of an array.
 8. [For...of](./for-of.md) - Iterate directly over the values of iterable collections such as arrays, strings, maps, and sets.
 9. [Break and continue](./break-and-continue.md) - Alter standard loop execution by breaking out early or jumping to the next iteration.
+10. [Try, Catch, and Throw](./try-catch.md) - Report invalid situations with throw, and handle them gracefully with try/catch instead of letting the program crash.
 
 ## Exercises & Code Snippets
 

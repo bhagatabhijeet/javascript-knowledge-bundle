@@ -95,3 +95,4 @@ This is deliberate: a getter can run arbitrary code, so the console avoids execu
 - [Types of functions](./function-types.md)
 - [Template Literal](../objects/template-literals.md)
 - [Basics (object literals)](../objects/basics.md)
+- [Try, Catch, and Throw](../control-flow/try-catch.md)
