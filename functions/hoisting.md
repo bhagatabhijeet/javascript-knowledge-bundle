@@ -14,13 +14,13 @@ tags:
 
 # Hoisting
 
-Before running a script, the JavaScript engine scans it and registers every declaration it finds, in the current scope, ahead of time. This is called **hoisting** — it's as if declarations were physically moved ("hoisted") to the top of their scope, even though the code you wrote never actually moved.
+When JavaScript runs a script, it doesn't just execute your code top to bottom in a single pass. First it creates an **execution context** in two phases: a **memory creation phase**, where the engine scans the whole scope and sets aside memory for every variable and function declaration it finds, and only then a **code execution phase**, where your code actually runs line by line. **Hoisting** is the name for the effect of that first phase — you can reference a variable or function before the line that defines it, because memory for it was already reserved before execution ever began.
 
-Hoisting doesn't work the same way for every kind of declaration, and mixing them up is one of the most common sources of confusing bugs for JavaScript beginners.
+You'll often see hoisting summarized as "JavaScript moves declarations to the top of the file." That's a handy shorthand for predicting behavior, but nothing physically moves — the code stays exactly where you wrote it. What actually happens is memory allocated ahead of time, and *what* gets stored in that memory differs depending on how the thing was declared — which is why hoisting doesn't behave identically for every kind of declaration, and is one of the most common sources of confusing bugs for JavaScript beginners.
 
 ## Function declarations are fully hoisted
 
-A function declared with the `function` keyword is hoisted **with its entire body**, so it can be called before the line where it's written:
+During the memory creation phase, a function declared with the `function` keyword has its **entire body** copied into memory immediately — not just its name — so it's fully callable before the line where it's written:
 
 ```js
 sayHello(); // 'Hello!' — works fine
@@ -30,9 +30,13 @@ function sayHello() {
 }
 ```
 
+### Seeing it for yourself
+
+Most browsers let you pause a script before any of it runs — a breakpoint on the very first line — and inspect the current scope right there in the debugger. Doing that here shows `sayHello` already sitting in memory as a full, callable function, before that line of code has actually executed.
+
 ## `var` is hoisted, but only the declaration
 
-A variable declared with `var` is hoisted too, but only the *declaration* — its assignment stays where you wrote it. Before that line runs, the variable already exists, initialized to `undefined`:
+A variable declared with `var` gets memory reserved during the same memory creation phase — but instead of a value, the engine fills it with the placeholder `undefined` until the line that assigns it actually runs:
 
 ```js
 console.log(name); // undefined — `name` exists, but isn't assigned yet
@@ -62,7 +66,7 @@ This is generally considered a feature, not a limitation: it turns a silent `und
 
 ## Function expressions and arrow functions are not hoisted like declarations
 
-Only *function declarations* get their whole body hoisted. A function assigned to a `var`, `let`, or `const` is hoisted the same way that variable is — which means the function itself isn't usable until its assignment line actually runs:
+Only *function declarations* get their whole body copied into memory upfront. A function assigned to a `var`, `let`, or `const` — including every arrow function — is just a variable as far as the memory creation phase is concerned, and is hoisted the same way that variable is. The function itself isn't usable until its assignment line actually runs:
 
 ```js
 sayHi(); // TypeError: sayHi is not a function (var hoisted, but still undefined at this point)
@@ -79,6 +83,25 @@ const sayBye = () => {
   console.log('Bye!');
 };
 ```
+
+## `undefined` vs. "not defined": two different problems
+
+Hoisting produces a few error-shaped results that are easy to conflate, but they mean different things:
+
+- **`undefined`** means the identifier *was* declared somewhere in scope — memory was reserved for it during the creation phase — but the line that assigns it a real value hasn't run yet.
+- **`ReferenceError: x is not defined`** means there's no declaration for `x` anywhere in an accessible scope, full stop — no memory was ever reserved for it, hoisting or otherwise.
+- **`ReferenceError: Cannot access 'x' before initialization`** is the TDZ case from `let`/`const` above — a third, distinct message for a variable that *was* declared, just not yet reachable.
+
+```js
+console.log(x); // undefined — x is declared below, just not assigned yet
+var x = 7;
+```
+
+```js
+console.log(y); // ReferenceError: y is not defined — y is never declared anywhere
+```
+
+These look similar at a glance, but the first is hoisting behaving completely normally; the second means a declaration is missing entirely — often a typo.
 
 ## Why this matters
 
