@@ -26,7 +26,7 @@ See [Arrow Functions](./arrow-functions.md) for the full `=>` syntax, including 
 
 ## Getter and setter functions
 
-Getters and setters allow you to access and mutate object properties through methods while retaining property syntax:
+Getters and setters let you access and mutate object properties through methods while retaining plain property syntax — no `()` needed to read one, and assignment (`=`) instead of a method call to write one:
 
 ```js
 const person = {
@@ -45,6 +45,8 @@ const person = {
 person.fullName = 'Alice Johnson';
 console.log(person.fullName); // Alice Johnson
 ```
+
+See [Getters and Setters](./getters-and-setters.md) for the problem they solve and how the browser console evaluates them lazily.
 
 ## Factory functions vs Constructor functions
 
