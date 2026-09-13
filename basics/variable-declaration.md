@@ -110,4 +110,5 @@ This matters because `window` is a single, shared object — every script on the
 
 - [Variables](./variables.md)
 - [Constants](./constants.md)
+- [Local vs Global Scope](./local-vs-global-scope.md)
 - [Hoisting](../functions/hoisting.md)
