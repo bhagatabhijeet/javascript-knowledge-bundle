@@ -90,4 +90,5 @@ This is how libraries like styled-components and tagged SQL/GraphQL helpers pars
 
 - [Built-in Objects (Math, String, Date)](./builtin-objects/)
 - [String](./builtin-objects/string.md)
+- [Joining Arrays](../arrays/joining-arrays.md)
 - [Basics](./basics.md)

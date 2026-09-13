@@ -10,4 +10,5 @@ Store, query, and transform ordered lists and collections in JavaScript.
 6. [Emptying an Array](./emptying-an-array.md) - Remove every element from an array with array.length = 0 or splice, and understand why reassigning to a new [] doesn't affect other references to the original array.
 7. [Combining and Slicing Arrays](./combining-and-slicing-arrays.md) - Combine two arrays with concat, extract a portion of one with slice, and understand how both copy primitives by value but objects by reference.
 8. [The Spread Operator](./spread-operator.md) - Combine or copy arrays with the ES6 spread operator (...), a cleaner and more flexible alternative to concat and slice.
-9. [Iterating Elements](./iterating-elements.md) - Loop over an array's elements with for...of and forEach, and transform them with map, filter, and reduce.
+9. [Joining Arrays](./joining-arrays.md) - Turn an array into a single string with join(), controlling the separator between elements.
+10. [Iterating Elements](./iterating-elements.md) - Loop over an array's elements with for...of and forEach, and transform them with map, filter, and reduce.
