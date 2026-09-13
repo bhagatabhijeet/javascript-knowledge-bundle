@@ -149,6 +149,7 @@ Since the rule "a function's `this` comes from its own call" never applies to ar
 
 ## Related concepts
 
+- [Changing the Value of this](./changing-this.md)
 - [call, apply, and bind](./call-apply-bind.md)
 - [Constructor Functions](../objects/constructor-functions.md)
 - [Arrow Functions](./arrow-functions.md)

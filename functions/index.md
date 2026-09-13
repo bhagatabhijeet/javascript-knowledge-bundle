@@ -6,6 +6,7 @@ Encapsulate logic and behavior with JavaScript function declarations, expression
 * [Types of functions](./function-types.md) - The different ways to define and categorize functions in JavaScript, from declarations to higher-order and async functions.
 * [The this Keyword](./this-keyword.md) - this refers to whatever object is executing the current function — determined entirely by how the function was called, not where it was written.
 * [call, apply, and bind](./call-apply-bind.md) - Control what `this` refers to inside a function using the built-in call, apply, and bind methods every function inherits.
+* [Changing the Value of this](./changing-this.md) - Three ways to control what this refers to inside a function — saving it in a variable, call/apply/bind, and arrow functions — from the oldest trick to the modern default.
 * [Hoisting](./hoisting.md) - JavaScript moves declarations to the top of their scope before running any code, which changes what you can safely use before it's written.
 * [Arrow Functions](./arrow-functions.md) - Write shorter function expressions with the => syntax, especially for one-off callbacks passed to methods like find, map, and filter.
 * [Rest Operator](./rest-operator.md) - Collect any number of remaining function arguments into a real array using the rest operator (...), the modern replacement for the arguments object.

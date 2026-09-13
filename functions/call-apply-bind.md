@@ -109,6 +109,7 @@ class Timer {
 ## Related concepts
 
 - [The this Keyword](./this-keyword.md)
+- [Changing the Value of this](./changing-this.md)
 - [Functions are Objects](../objects/functions-are-objects.md)
 - [Constructor Functions](../objects/constructor-functions.md)
 - [Function declarations and expressions](./functions.md)

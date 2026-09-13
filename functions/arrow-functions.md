@@ -82,6 +82,7 @@ That final line reads almost like English: "find, in courses, the course whose n
 ## Related concepts
 
 - [The this Keyword](./this-keyword.md)
+- [Changing the Value of this](./changing-this.md)
 - [Function declarations and expressions](./functions.md)
 - [Types of functions](./function-types.md)
 - [Rest Operator](./rest-operator.md)

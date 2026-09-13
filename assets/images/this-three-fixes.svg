@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="380" fill="#ffffff"/>
+
+  <text x="380" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Three ways to fix a lost `this` inside a callback</text>
+
+  <!-- Column 1: self pattern -->
+  <rect x="20" y="46" width="225" height="310" rx="12" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="132" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Save `this` in a variable</text>
+  <text x="132" y="90" text-anchor="middle" font-size="11" fill="#6b7280">old trick — "self" or "that"</text>
+
+  <rect x="35" y="105" width="195" height="120" rx="6" fill="#1f2937"/>
+  <text x="47" y="126" font-size="11.5" fill="#e5e7eb" xml:space="preserve">showTags() {</text>
+  <text x="59" y="144" font-size="11.5" fill="#93c5fd" xml:space="preserve">const self = this;</text>
+  <text x="59" y="162" font-size="11.5" fill="#e5e7eb" xml:space="preserve">this.tags.forEach(</text>
+  <text x="71" y="180" font-size="11.5" fill="#e5e7eb" xml:space="preserve">function (tag) {</text>
+  <text x="83" y="198" font-size="11.5" fill="#fca5a5" xml:space="preserve">self.title</text>
+  <text x="47" y="216" font-size="11.5" fill="#e5e7eb" xml:space="preserve">}</text>
+
+  <text x="132" y="250" text-anchor="middle" font-size="11" fill="#4b5563">Works everywhere, but adds</text>
+  <text x="132" y="266" text-anchor="middle" font-size="11" fill="#4b5563">an extra variable just to</text>
+  <text x="132" y="282" text-anchor="middle" font-size="11" fill="#4b5563">route around the problem.</text>
+
+  <rect x="45" y="310" width="175" height="28" rx="14" fill="#f3f4f6" stroke="#9ca3af"/>
+  <text x="132" y="329" text-anchor="middle" font-size="11" fill="#4b5563">Understand it — don't write it</text>
+
+  <!-- Column 2: bind -->
+  <rect x="267" y="46" width="225" height="310" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="379" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a8a">bind()</text>
+  <text x="379" y="90" text-anchor="middle" font-size="11" fill="#1e40af">locks `this` permanently</text>
+
+  <rect x="282" y="105" width="195" height="120" rx="6" fill="#1f2937"/>
+  <text x="294" y="126" font-size="11.5" fill="#e5e7eb" xml:space="preserve">showTags() {</text>
+  <text x="306" y="144" font-size="11.5" fill="#e5e7eb" xml:space="preserve">this.tags.forEach(</text>
+  <text x="318" y="162" font-size="11.5" fill="#e5e7eb" xml:space="preserve">function (tag) {</text>
+  <text x="330" y="180" font-size="11.5" fill="#93c5fd" xml:space="preserve">this.title</text>
+  <text x="306" y="198" font-size="11.5" fill="#fde047" xml:space="preserve">}.bind(this));</text>
+  <text x="294" y="216" font-size="11.5" fill="#e5e7eb" xml:space="preserve">}</text>
+
+  <text x="379" y="250" text-anchor="middle" font-size="11" fill="#1e40af">Explicit and reliable, but a</text>
+  <text x="379" y="266" text-anchor="middle" font-size="11" fill="#1e40af">little verbose for something</text>
+  <text x="379" y="282" text-anchor="middle" font-size="11" fill="#1e40af">this common.</text>
+
+  <rect x="292" y="310" width="175" height="28" rx="14" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="379" y="329" text-anchor="middle" font-size="11" fill="#1e3a8a">Good when you need it explicit</text>
+
+  <!-- Column 3: arrow function -->
+  <rect x="514" y="46" width="225" height="310" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <rect x="600" y="34" width="130" height="24" rx="12" fill="#16a34a"/>
+  <text x="665" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">&#10003; Recommended</text>
+  <text x="626" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Arrow function</text>
+  <text x="626" y="98" text-anchor="middle" font-size="11" fill="#166534">inherits `this` automatically</text>
+
+  <rect x="529" y="112" width="195" height="100" rx="6" fill="#1f2937"/>
+  <text x="541" y="133" font-size="11.5" fill="#e5e7eb" xml:space="preserve">showTags() {</text>
+  <text x="553" y="151" font-size="11.5" fill="#e5e7eb" xml:space="preserve">this.tags.forEach(</text>
+  <text x="565" y="169" font-size="11.5" fill="#fde047" xml:space="preserve">tag =&gt; {</text>
+  <text x="577" y="187" font-size="11.5" fill="#93c5fd" xml:space="preserve">this.title</text>
+  <text x="565" y="205" font-size="11.5" fill="#e5e7eb" xml:space="preserve">});</text>
+
+  <text x="626" y="250" text-anchor="middle" font-size="11" fill="#166534">No self, no bind — the arrow</text>
+  <text x="626" y="266" text-anchor="middle" font-size="11" fill="#166534">function was never going to</text>
+  <text x="626" y="282" text-anchor="middle" font-size="11" fill="#166534">have its own `this` anyway.</text>
+
+  <rect x="539" y="310" width="175" height="28" rx="14" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="626" y="329" text-anchor="middle" font-size="11" fill="#14532d">The modern default choice</text>
+</svg>
