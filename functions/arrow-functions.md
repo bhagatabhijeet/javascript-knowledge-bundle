@@ -83,3 +83,4 @@ That final line reads almost like English: "find, in courses, the course whose n
 - [Function declarations and expressions](./functions.md)
 - [Types of functions](./function-types.md)
 - [Finding Elements (References)](../arrays/finding-elements-references.md)
+- [Iterating Elements](../arrays/iterating-elements.md)

@@ -32,11 +32,21 @@ for (const number of numbers) {
 
 ## `forEach()`
 
-`forEach` calls a function once per element, passing the element, its index, and the array itself:
+`forEach` calls a function once per element, passing the element, its index, and the array itself. Written with a regular function expression:
+
+```js
+numbers.forEach(function (number, index) {
+  console.log(index, number);
+});
+```
+
+Because this callback is a short, one-off function passed straight into `forEach`, it's a perfect candidate for an [arrow function](../functions/arrow-functions.md) — dropping the `function` keyword, and dropping the `{ }`/`return` since the body is a single expression:
 
 ```js
 numbers.forEach((number, index) => console.log(index, number));
 ```
+
+Both versions behave identically — the arrow form is just shorter to read and write.
 
 Unlike `for...of`, `forEach` cannot be stopped early with `break` — if you need to exit partway through, use `for...of` or a plain loop instead.
 
