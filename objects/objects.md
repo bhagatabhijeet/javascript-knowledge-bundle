@@ -55,5 +55,5 @@ delete circle.color;
 
 - [Variables](../basics/variables.md)
 - [Constants](../basics/constants.md)
-- [Arrays](../arrays/arrays.md)
+- [Arrays](../arrays/)
 - [Functions](../functions/functions.md)

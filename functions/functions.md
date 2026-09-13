@@ -71,4 +71,4 @@ console.log(sum(1, 2, 3, 4)); // 10
 
 - [Types of functions](./function-types.md)
 - [Objects](../objects/objects.md)
-- [Arrays](../arrays/arrays.md)
+- [Arrays](../arrays/)

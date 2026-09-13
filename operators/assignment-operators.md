@@ -49,7 +49,7 @@ const [first, second] = [1, 2]
 const { name, role } = { name: 'Ada', role: 'Engineer' }
 ```
 
-See [Objects and object literal patterns](../objects/objects.md) and [Arrays](../arrays/arrays.md) for more on the structures being destructured.
+See [Objects and object literal patterns](../objects/objects.md) and [Arrays](../arrays/) for more on the structures being destructured.
 
 ## Related concepts
 
