@@ -51,4 +51,4 @@ now.toLocaleDateString(); // e.g. '9/5/2026', formatted per the user's locale
 ## Related concepts
 
 - [Constructor Functions](./constructor-functions.md)
-- [Math](./math.md)
+- [Math](./builtin-objects/math.md)

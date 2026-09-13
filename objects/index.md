@@ -12,7 +12,6 @@ Create, configure, and manipulate JavaScript objects, methods, and reference typ
 8. [Enumerating Properties of an Object](./enumerating-properties-of-an-object.md) - List an object's keys, values, or entries using for...in, Object.keys, Object.values, and Object.entries.
 9. [Cloning an Object](./cloning-an-object.md) - Copy an object's properties into a new object using Object.assign, the spread operator, or structuredClone.
 10. [Garbage Collection](./garbage-collection.md) - JavaScript automatically reclaims memory used by objects that are no longer reachable.
-11. [Math](./math.md) - Use the built-in Math object for constants and functions like rounding, random numbers, and min/max.
-12. [String](./string.md) - Work with text using string primitives, their built-in methods, and the String wrapper object.
-13. [Template Literal](./template-literals.md) - Build strings with embedded expressions and multi-line text using backtick template literals.
-14. [Date](./date.md) - Represent and work with points in time using JavaScript's built-in Date object.
+11. [Built-in Objects](./builtin-objects/) - The always-available global objects, starting with Math and String.
+12. [Template Literal](./template-literals.md) - Build strings with embedded expressions and multi-line text using backtick template literals.
+13. [Date](./date.md) - Represent and work with points in time using JavaScript's built-in Date object.

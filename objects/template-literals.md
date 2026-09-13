@@ -45,5 +45,5 @@ const message = `
 
 ## Related concepts
 
-- [String](./string.md)
+- [String](./builtin-objects/string.md)
 - [Basics](./basics.md)
