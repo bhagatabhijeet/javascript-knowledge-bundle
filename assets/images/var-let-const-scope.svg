@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="400" viewBox="0 0 760 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="400" fill="#ffffff"/>
+
+  <!-- Outer: function scope -->
+  <rect x="20" y="30" width="720" height="350" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="380" y="54" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">function example() { ... } — function scope</text>
+
+  <!-- Inner: block scope -->
+  <rect x="60" y="72" width="640" height="132" rx="10" fill="#fefce8" stroke="#eab308" stroke-width="1.5"/>
+  <text x="380" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#713f12">if (true) { ... } — block scope</text>
+
+  <text x="90" y="126" font-size="13" fill="#1f2937">var x = 1;</text>
+  <text x="90" y="150" font-size="13" fill="#1f2937">let y = 2;</text>
+  <text x="90" y="174" font-size="13" fill="#1f2937">const z = 3;</text>
+
+  <text x="380" y="228" text-anchor="middle" font-size="12" font-style="italic" fill="#6b7280">// after the block, still inside the function</text>
+
+  <text x="90" y="262" font-size="13" fill="#166534">✓</text>
+  <text x="115" y="262" font-size="13" fill="#1f2937">console.log(x); // 1 — var leaked out of the if block</text>
+
+  <text x="90" y="290" font-size="13" fill="#b91c1c">✗</text>
+  <text x="115" y="290" font-size="13" fill="#1f2937">console.log(y); // ReferenceError — let stayed inside the block</text>
+
+  <text x="90" y="318" font-size="13" fill="#b91c1c">✗</text>
+  <text x="115" y="318" font-size="13" fill="#1f2937">console.log(z); // ReferenceError — const stayed inside the block too</text>
+
+  <text x="380" y="358" text-anchor="middle" font-size="12" fill="#1e3a8a">var ignores { } blocks — let and const respect them</text>
+</svg>

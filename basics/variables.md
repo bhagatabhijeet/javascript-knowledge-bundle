@@ -56,6 +56,7 @@ However, `var` is function-scoped and hoisted, which frequently causes subtle sc
 
 ## Related concepts
 
+- [Variable Declaration: var, let, and const](./variable-declaration.md)
 - [Constants](./constants.md)
 - [Primitive data types](./primitive-types.md)
 - [Dynamic typing and type coercion](./dynamic-typing.md)

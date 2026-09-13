@@ -55,6 +55,7 @@ person = { name: 'Bob' }; // TypeError: Assignment to constant variable.
 
 ## Related concepts
 
+- [Variable Declaration: var, let, and const](./variable-declaration.md)
 - [Variables](./variables.md)
 - [Primitive data types](./primitive-types.md)
 - [Dynamic typing and type coercion](./dynamic-typing.md)

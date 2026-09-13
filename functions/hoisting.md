@@ -89,5 +89,6 @@ const sayBye = () => {
 ## Related concepts
 
 - [Function declarations and expressions](./functions.md)
+- [Variable Declaration: var, let, and const](../basics/variable-declaration.md)
 - [Variables](../basics/variables.md)
 - [Constants](../basics/constants.md)
