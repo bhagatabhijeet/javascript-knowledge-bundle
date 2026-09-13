@@ -77,3 +77,5 @@ logs.findLast(log => log.level === 'error');
 - [Adding Elements](./adding-elements.md)
 - [Arrow Functions](../functions/arrow-functions.md)
 - [Sorting Arrays](./sorting-arrays.md)
+- [Filtering an Array](./filtering-an-array.md)
+- [Testing the Elements of an Array](./testing-elements.md)

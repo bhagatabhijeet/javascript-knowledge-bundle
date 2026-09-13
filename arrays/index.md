@@ -12,4 +12,6 @@ Store, query, and transform ordered lists and collections in JavaScript.
 8. [The Spread Operator](./spread-operator.md) - Combine or copy arrays with the ES6 spread operator (...), a cleaner and more flexible alternative to concat and slice.
 9. [Joining Arrays](./joining-arrays.md) - Turn an array into a single string with join(), controlling the separator between elements.
 10. [Iterating Elements](./iterating-elements.md) - Loop over an array's elements with for...of and forEach, and transform them with map, filter, and reduce.
-11. [Sorting Arrays](./sorting-arrays.md) - Sort an array in place with sort(), reverse it with reverse(), and write a compare function to sort arrays of objects correctly.
+11. [Filtering an Array](./filtering-an-array.md) - Build a new array containing only the elements that pass a test, using filter().
+12. [Testing the Elements of an Array](./testing-elements.md) - Ask a yes/no question about an array's contents with every() and some(), instead of manually looping to check.
+13. [Sorting Arrays](./sorting-arrays.md) - Sort an array in place with sort(), reverse it with reverse(), and write a compare function to sort arrays of objects correctly.
