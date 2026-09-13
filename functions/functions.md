@@ -124,5 +124,6 @@ The [rest operator](./rest-operator.md) is the modern replacement for this whole
 - [Functions are Objects](../objects/functions-are-objects.md)
 - [Hoisting](./hoisting.md)
 - [Rest Operator](./rest-operator.md)
+- [Default Parameters](./default-parameters.md)
 - [Objects](../objects/objects.md)
 - [Arrays](../arrays/)
