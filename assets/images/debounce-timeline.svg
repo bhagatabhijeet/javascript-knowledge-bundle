@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="410" viewBox="0 0 760 410" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="410" fill="#ffffff"/>
+
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Typing "hello" into a search box</text>
+
+  <!-- Panel A: without debounce -->
+  <rect x="20" y="40" width="720" height="150" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="380" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#7f1d1d">Without debounce — every keystroke runs the function</text>
+
+  <line x1="60" y1="150" x2="700" y2="150" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- keystroke 1 -->
+  <circle cx="110" cy="150" r="5" fill="#4b5563"/>
+  <line x1="110" y1="145" x2="110" y2="100" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="84" y="72" width="52" height="26" rx="5" fill="#ef4444"/>
+  <text x="110" y="89" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">fn()</text>
+  <text x="110" y="168" text-anchor="middle" font-size="11" fill="#374151">h</text>
+
+  <!-- keystroke 2 -->
+  <circle cx="230" cy="150" r="5" fill="#4b5563"/>
+  <line x1="230" y1="145" x2="230" y2="100" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="204" y="72" width="52" height="26" rx="5" fill="#ef4444"/>
+  <text x="230" y="89" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">fn()</text>
+  <text x="230" y="168" text-anchor="middle" font-size="11" fill="#374151">he</text>
+
+  <!-- keystroke 3 -->
+  <circle cx="350" cy="150" r="5" fill="#4b5563"/>
+  <line x1="350" y1="145" x2="350" y2="100" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="324" y="72" width="52" height="26" rx="5" fill="#ef4444"/>
+  <text x="350" y="89" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">fn()</text>
+  <text x="350" y="168" text-anchor="middle" font-size="11" fill="#374151">hel</text>
+
+  <!-- keystroke 4 -->
+  <circle cx="470" cy="150" r="5" fill="#4b5563"/>
+  <line x1="470" y1="145" x2="470" y2="100" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="444" y="72" width="52" height="26" rx="5" fill="#ef4444"/>
+  <text x="470" y="89" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">fn()</text>
+  <text x="470" y="168" text-anchor="middle" font-size="11" fill="#374151">hell</text>
+
+  <!-- keystroke 5 -->
+  <circle cx="590" cy="150" r="5" fill="#4b5563"/>
+  <line x1="590" y1="145" x2="590" y2="100" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="564" y="72" width="52" height="26" rx="5" fill="#ef4444"/>
+  <text x="590" y="89" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">fn()</text>
+  <text x="590" y="168" text-anchor="middle" font-size="11" fill="#374151">hello</text>
+
+  <text x="380" y="184" text-anchor="middle" font-size="11" fill="#7f1d1d">5 keystrokes → 5 expensive function calls</text>
+
+  <!-- Panel B: with debounce -->
+  <rect x="20" y="210" width="720" height="180" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="380" y="234" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">With debounce (500ms) — waits until typing pauses</text>
+
+  <line x1="60" y1="330" x2="700" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- keystrokes 1-4: timer keeps getting cancelled -->
+  <circle cx="110" cy="330" r="5" fill="#4b5563"/>
+  <line x1="110" y1="325" x2="110" y2="300" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="110" y="292" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">&#10005;</text>
+  <text x="110" y="348" text-anchor="middle" font-size="11" fill="#374151">h</text>
+
+  <circle cx="230" cy="330" r="5" fill="#4b5563"/>
+  <line x1="230" y1="325" x2="230" y2="300" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="230" y="292" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">&#10005;</text>
+  <text x="230" y="348" text-anchor="middle" font-size="11" fill="#374151">he</text>
+
+  <circle cx="350" cy="330" r="5" fill="#4b5563"/>
+  <line x1="350" y1="325" x2="350" y2="300" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="350" y="292" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">&#10005;</text>
+  <text x="350" y="348" text-anchor="middle" font-size="11" fill="#374151">hel</text>
+
+  <circle cx="470" cy="330" r="5" fill="#4b5563"/>
+  <line x1="470" y1="325" x2="470" y2="300" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="470" y="292" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">&#10005;</text>
+  <text x="470" y="348" text-anchor="middle" font-size="11" fill="#374151">hell</text>
+
+  <text x="290" y="368" text-anchor="middle" font-size="11" fill="#166534">each new keystroke cancels the previous timer</text>
+
+  <!-- keystroke 5: timer finally completes -->
+  <circle cx="590" cy="330" r="5" fill="#4b5563"/>
+  <text x="590" y="348" text-anchor="middle" font-size="11" fill="#374151">hello</text>
+  <line x1="590" y1="330" x2="680" y2="330" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="635" y="316" text-anchor="middle" font-size="11" fill="#166534">500ms</text>
+  <line x1="680" y1="330" x2="680" y2="262" stroke="#16a34a" stroke-width="2.5"/>
+  <polygon points="680,255 673,266 687,266" fill="#16a34a"/>
+  <rect x="618" y="222" width="124" height="32" rx="6" fill="#16a34a"/>
+  <text x="680" y="243" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">fn('hello')</text>
+
+  <text x="635" y="388" text-anchor="middle" font-size="11" fill="#166534">timer finally completes → function runs once, with the latest value</text>
+</svg>

@@ -18,8 +18,8 @@ This bundle attempts to take you from "what even is JavaScript?" to writing obje
 4. **[Control Flow](control-flow/)** — if/else, switch, and every loop shape JavaScript offers.
 5. **[Objects](objects/)** — 14 concepts from object literals through factory/constructor functions, value vs. reference semantics, cloning, garbage collection, and the built-in `Math`, `String`, and `Date` objects.
 6. **[Arrays](arrays/)** — ordered collections and how to search, mutate, and iterate over them.
-7. **[Functions](functions/)** — declarations, expressions, getters/setters, and the different shapes a function can take.
-8. **[Advanced](advanced/)** — the event loop, promises, `async`/`await`, and ES modules.
+7. **[Functions](functions/)** — declarations, expressions, getters/setters, the different shapes a function can take, `call`/`apply`/`bind`, and hoisting.
+8. **[Advanced](advanced/)** — the event loop, promises, `async`/`await`, ES modules, and performance patterns like debouncing.
 9. **[Quiz](quiz/)** — 10 multiple-choice questions with step-by-step explanations.
 10. **[Assets](assets/)** — code snippets, exercises, and every diagram used above.
 

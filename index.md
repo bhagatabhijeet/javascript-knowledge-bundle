@@ -14,8 +14,8 @@ okf_version: "0.2"
 4. [Control Flow](control-flow/) - Conditional statements (if-else, switch) and loops (for, while, do-while, for-in, for-of).
 5. [Objects](objects/) - Object-oriented patterns, property manipulation, methods, and reference semantics.
 6. [Arrays](arrays/) - Ordered collections, searching, adding, removing, and iterating over array elements.
-7. [Functions](functions/) - Declarations, expressions, getters, setters, and factory functions.
-8. [Advanced](advanced/) - Asynchronous JavaScript and ES module architecture.
+7. [Functions](functions/) - Declarations, expressions, getters, setters, factory functions, call/apply/bind, and hoisting.
+8. [Advanced](advanced/) - Asynchronous JavaScript, ES module architecture, and performance patterns like debouncing.
 9. [Quiz](quiz/) - Knowledge checks and multiple-choice quizzes with detailed explanations.
 10. [Assets](assets/) - Code snippets, exercises, and bundle images.
 
