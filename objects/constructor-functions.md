@@ -48,6 +48,7 @@ Using `new` with these built-ins produces a wrapper object rather than a primiti
 
 ## Related concepts
 
+- [The this Keyword](../functions/this-keyword.md)
 - [Factory Functions](./factory-functions.md)
 - [Constructor Property](./constructor-property.md)
 - [Basics](./basics.md)

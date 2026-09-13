@@ -75,12 +75,13 @@ That final line reads almost like English: "find, in courses, the course whose n
 
 ## Other things worth knowing
 
-- Arrow functions don't get their own `this` — they use `this` from the scope they were defined in, which is why they're commonly used inside methods and callbacks where losing `this` would otherwise be a problem (see [call, apply, and bind](./call-apply-bind.md)).
+- Arrow functions don't get their own [`this`](./this-keyword.md) — they use `this` from the scope they were defined in, which is why they're commonly used inside methods and callbacks where losing `this` would otherwise be a problem (see [call, apply, and bind](./call-apply-bind.md)).
 - Arrow functions can't be used as constructors — calling one with `new` throws a `TypeError`.
 - Arrow functions don't have their own `arguments` object either — see the [rest operator](./rest-operator.md) for the way to collect a varying number of arguments that works in arrow functions too.
 
 ## Related concepts
 
+- [The this Keyword](./this-keyword.md)
 - [Function declarations and expressions](./functions.md)
 - [Types of functions](./function-types.md)
 - [Rest Operator](./rest-operator.md)

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">What does `this` mean? Look at how the function was called.</text>
+
+  <!-- Left: called as a method -->
+  <rect x="30" y="55" width="330" height="215" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">Called as obj.method()</text>
+
+  <rect x="55" y="100" width="280" height="34" rx="6" fill="#1d4ed8"/>
+  <text x="195" y="122" text-anchor="middle" font-size="14" fill="#ffffff">video.play()</text>
+
+  <text x="195" y="158" text-anchor="middle" font-size="24" fill="#1d4ed8">&#8595;</text>
+
+  <rect x="55" y="172" width="280" height="42" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="195" y="198" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">this === video</text>
+
+  <text x="195" y="240" text-anchor="middle" font-size="11.5" fill="#1e3a8a">the object left of the dot</text>
+  <text x="195" y="256" text-anchor="middle" font-size="11.5" fill="#1e3a8a">is what "this" refers to</text>
+
+  <!-- Right: called as a plain function -->
+  <rect x="400" y="55" width="330" height="215" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#7f1d1d">Called as a plain function()</text>
+
+  <rect x="425" y="100" width="280" height="34" rx="6" fill="#b91c1c"/>
+  <text x="565" y="122" text-anchor="middle" font-size="14" fill="#ffffff">playVideo()</text>
+
+  <text x="565" y="158" text-anchor="middle" font-size="24" fill="#b91c1c">&#8595;</text>
+
+  <rect x="425" y="172" width="280" height="42" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1"/>
+  <text x="565" y="198" text-anchor="middle" font-size="14" font-weight="bold" fill="#7f1d1d">this === global object</text>
+
+  <text x="565" y="240" text-anchor="middle" font-size="11.5" fill="#7f1d1d">no object before the call —</text>
+  <text x="565" y="256" text-anchor="middle" font-size="11.5" fill="#7f1d1d">window in browsers, global in Node</text>
+</svg>

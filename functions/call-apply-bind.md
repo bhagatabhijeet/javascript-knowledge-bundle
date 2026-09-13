@@ -13,7 +13,7 @@ tags:
 
 # call, apply, and bind
 
-Because [functions are objects](../objects/functions-are-objects.md), every function comes with three built-in methods — `call`, `apply`, and `bind` — for controlling what `this` refers to when the function runs.
+Because [functions are objects](../objects/functions-are-objects.md), every function comes with three built-in methods — `call`, `apply`, and `bind` — for controlling what [`this`](./this-keyword.md) refers to when the function runs.
 
 ## Why `this` needs controlling
 
@@ -108,6 +108,7 @@ class Timer {
 
 ## Related concepts
 
+- [The this Keyword](./this-keyword.md)
 - [Functions are Objects](../objects/functions-are-objects.md)
 - [Constructor Functions](../objects/constructor-functions.md)
 - [Function declarations and expressions](./functions.md)
