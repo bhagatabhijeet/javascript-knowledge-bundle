@@ -75,3 +75,4 @@ logs.findLast(log => log.level === 'error');
 - [Finding Elements (Primitives)](./finding-elements-primitives.md)
 - [Value vs Reference Types](../objects/value-vs-reference-types.md)
 - [Adding Elements](./adding-elements.md)
+- [Arrow Functions](../functions/arrow-functions.md)

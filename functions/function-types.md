@@ -22,6 +22,8 @@ const greet2 = function () {} // anonymous, assigned to a variable
 const greet3 = () => {}       // arrow functions are always anonymous unless assigned
 ```
 
+See [Arrow Functions](./arrow-functions.md) for the full `=>` syntax, including when parentheses and `return` can be dropped.
+
 ## Getter and setter functions
 
 Getters and setters allow you to access and mutate object properties through methods while retaining property syntax:
