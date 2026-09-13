@@ -84,5 +84,6 @@ users; // [{ id: 1 }, { id: 3 }]
 ## Related concepts
 
 - [Adding Elements](./adding-elements.md)
+- [Emptying an Array](./emptying-an-array.md)
 - [Finding Elements (References)](./finding-elements-references.md)
 - [Iterating Elements](./iterating-elements.md)
