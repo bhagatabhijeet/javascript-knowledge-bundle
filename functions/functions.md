@@ -67,9 +67,38 @@ run();  // 'run'
 move(); // 'run' — same function, called through a different variable
 ```
 
+## The parameter count is just a suggestion
+
+Since JavaScript is dynamically typed, that flexibility extends to how many arguments you pass — the engine never enforces a match with the declared parameter list:
+
+```js
+function sum(a, b) {
+  return a + b;
+}
+
+sum(1, 2);       // 3
+sum(1);          // NaN — b is undefined, and 1 + undefined is not a number
+sum();           // NaN — both a and b are undefined
+sum(1, 2, 3, 4, 5); // 3 — the extra arguments are accepted, just never used
+```
+
+Passing too few or too many arguments is never an error in JavaScript; it just changes what ends up inside the function.
+
 ## Arguments and the `arguments` object
 
-Functions can inspect the special `arguments` object to handle a varying number of arguments:
+Every regular function has access to a special `arguments` object holding every argument it was actually called with, regardless of how many parameters were declared:
+
+```js
+function sum(a, b) {
+  console.log(arguments);
+  return a + b;
+}
+
+sum(1, 2, 3, 4, 5);
+// Arguments(5) [1, 2, 3, 4, 5, callee: f, Symbol(Symbol.iterator): f]
+```
+
+`arguments` looks like an array — it has indexed properties (`0`, `1`, `2`, ...) and a `length` — but it's **not** a real `Array`: it has no `map`, `filter`, or `reduce`. It does have a `Symbol.iterator`, though, which is what makes it possible to loop over with [`for...of`](../control-flow/for-of.md):
 
 ```js
 function sum() {
@@ -80,25 +109,20 @@ function sum() {
   return total;
 }
 
-console.log(sum(1, 2, 3, 4)); // 10
+console.log(sum(1, 2, 3, 4, 5)); // 15
 ```
 
-## Rest operator (`...`)
+Because the function reads everything through `arguments` instead of named parameters, the parameter list can be dropped entirely — `sum()` works exactly the same as `sum(a, b)` would have, but now accepts any number of arguments.
 
-In modern JavaScript, the rest operator is preferred over `arguments`:
+`arguments` also exposes a `callee` property referencing the currently-executing function itself — but avoid it: `callee` is disallowed in strict-mode code (which ES modules and classes use by default) precisely because relying on it makes functions harder to optimize and refactor.
 
-```js
-function sum(...args) {
-  return args.reduce((a, b) => a + b);
-}
-
-console.log(sum(1, 2, 3, 4)); // 10
-```
+The [rest operator](./rest-operator.md) is the modern replacement for this whole pattern — it does the same job with an actual array.
 
 ## Related concepts
 
 - [Types of functions](./function-types.md)
 - [Functions are Objects](../objects/functions-are-objects.md)
 - [Hoisting](./hoisting.md)
+- [Rest Operator](./rest-operator.md)
 - [Objects](../objects/objects.md)
 - [Arrays](../arrays/)

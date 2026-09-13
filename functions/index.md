@@ -7,3 +7,4 @@ Encapsulate logic and behavior with JavaScript function declarations, expression
 * [call, apply, and bind](./call-apply-bind.md) - Control what `this` refers to inside a function using the built-in call, apply, and bind methods every function inherits.
 * [Hoisting](./hoisting.md) - JavaScript moves declarations to the top of their scope before running any code, which changes what you can safely use before it's written.
 * [Arrow Functions](./arrow-functions.md) - Write shorter function expressions with the => syntax, especially for one-off callbacks passed to methods like find, map, and filter.
+* [Rest Operator](./rest-operator.md) - Collect any number of remaining function arguments into a real array using the rest operator (...), the modern replacement for the arguments object.

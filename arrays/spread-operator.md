@@ -65,3 +65,4 @@ The spread operator works the same way on object literals too — see [Cloning a
 - [Combining and Slicing Arrays](./combining-and-slicing-arrays.md)
 - [Cloning an Object](../objects/cloning-an-object.md)
 - [Value vs Reference Types](../objects/value-vs-reference-types.md)
+- [Rest Operator](../functions/rest-operator.md)
